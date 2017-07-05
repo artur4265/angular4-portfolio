@@ -1,0 +1,16 @@
+<div class="breadcrums"><a routerLink="/">Home</a> > {{title}}</div>
+
+
+<ul class="list--apps">
+
+
+  <li class="app" *ngFor="let app of programs" [routerLink]="['/detail-app', app.id]" >
+    <div class="app--img"> <img [src]="app.photo" [alt]="app.name"> </div>
+    <div class="app--name">{{app.name}}</div>
+    <div class="app--prise">{{app.prise}}</div>
+    <hr [style.color]="app.mainColor">
+    <div class="app--category">{{app.category}}</div>
+    <div class="app--rate">Rate: {{app.rate}}</div>
+  </li>
+
+</ul>

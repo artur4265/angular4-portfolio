@@ -1,0 +1,24 @@
+
+<div class="breadcrums"><a routerLink="/">Home</a> > <a routerLink="/market-place">Market App</a> > {{app.name}}</div>
+
+<div class="detali-app">
+  <div class="detali-app--name--img mod_inline">
+    <div class="detali-app--name">
+      <h1>{{app.name}}</h1>
+    </div>
+    <div class="detali-app--img"> <img [src]="app.photo" [alt]="app.name"> </div>
+  </div>
+
+  <div class="detail-app--maininfo mod_inline">
+    <div class="detali-app--prise"><span>Prise:</span> {{app.prise}}</div>
+    <div class="detali-app--category"><span>Category:</span> {{app.category}}</div>
+    <div class="detali-app--rate"><span>Rate:</span> {{app.rate}}</div>
+    <br>
+    <div class="detali-app--text"><span>About App:</span> <br> <p>{{app.text}}</p></div>
+  </div>
+
+<div class="detail-app--downloads mod_inline">
+  <chart [type]="type" [data]="data" [options]="options"></chart>
+</div>
+
+</div>

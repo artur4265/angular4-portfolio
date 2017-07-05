@@ -1,0 +1,38 @@
+<header>
+  <div class="logo">
+    <h1>
+      {{title}}
+    </h1>    
+  </div>
+
+  <div id="work--panel">
+    <div id="panel--info">
+
+    </div>
+    <div id="panel--autification">
+
+    </div>
+  </div>
+</header>
+
+<aside>
+  <nav>
+    <ul id="main-nav--router--links">
+      <li><a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+      <li><a routerLink="/dashbroad" routerLinkActive="active-link">Dashbroad</a></li>
+      <li><a routerLink="/user-profile" routerLinkActive="active-link">User profile</a></li>
+      <li><a routerLink="/market-place" routerLinkActive="active-link">Market place</a></li>
+      <li><a routerLink="/add-app" routerLinkActive="active-link">Add app</a></li>
+      <li><a routerLink="/upgrate-to-pro" routerLinkActive="active-link">Upgrate to pro</a></li>
+    </ul>
+  </nav>
+</aside>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+
+<footer>
+  <div id="copyright">2017</div>
+</footer>

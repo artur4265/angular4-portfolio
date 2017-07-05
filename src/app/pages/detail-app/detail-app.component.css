@@ -1,0 +1,55 @@
+
+.detali-app {
+    width: 100%;
+    margin-left: 50px;
+}
+
+.detali-app--name--img {
+    width: 375px;
+}
+
+.detali-app--img {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.detali-app--img img {
+    width: 80%;
+}
+
+.detail-app--maininfo {
+    width: calc(100% - 380px);
+    max-width: 450px;
+    min-width: 375px;
+}
+
+.detail-app--maininfo span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mod_inline {
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 1px 1px 1px grey;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 20px 20px rgba(0,0,0,.08);
+    padding: 10px;
+    background-color: white;
+    transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+    color: #4B4F56;
+}
+
+.mod_inline:hover {
+    box-shadow: 0 40px 40px rgba(0,0,0,.16);
+}
+
+.detail-app--downloads {
+    width: 375px;
+}
+
+p {
+    font-size: 16px;
+}
