@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProgramListService } from './../program-list.service';
+import { Apps, programsMainData } from './../app-data.model';
 
 @Component({
   selector: 'app-market-place',
@@ -9,15 +10,13 @@ import { ProgramListService } from './../program-list.service';
 export class MarketPlaceComponent implements OnInit {
 
 title = '';
+programs = [];
+programsMainData = programsMainData;
 
-  constructor(private newProgram: ProgramListService) {
-   //id = this.newProgram.id;
-  }
-
-
-  programs = this.newProgram.programs;
+  constructor(private newProgram: ProgramListService) {}
 
   ngOnInit() {
+    this.programs = programsMainData;
     this.title = 'Market App';
     console.log(this.newProgram.onBuy());
   }
