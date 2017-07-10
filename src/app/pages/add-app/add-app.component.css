@@ -1,0 +1,36 @@
+#addapp {
+    display: inline-block;
+    position: relative;
+    width: 480px;
+    background-color: white;
+    vertical-align: top;
+    text-align: left;
+    margin: 20px;
+    box-shadow: 0 20px 20px rgba(0,0,0,.08);
+    white-space: normal;
+    transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+    color: #4B4F56;
+}
+
+#addapp .form-group {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 45px;
+}
+
+#addapp .form-group input {
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    -webkit-appearance: none;
+    display: block;
+    background: #fafafa;
+    color: #636363;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #e8e6e6;
+    border-radius: 2px;
+}
+

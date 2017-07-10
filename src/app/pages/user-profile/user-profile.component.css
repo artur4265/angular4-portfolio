@@ -1,0 +1,121 @@
+
+.user {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.user-face {
+    width: 320px;
+    text-align: left;
+    margin: 20px;
+}
+
+.hover__mod {
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    vertical-align: top;
+    box-shadow: 0 20px 20px rgba(0,0,0,.08);
+    white-space: normal;
+    transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+    color: #4B4F56;
+    padding: 10px;
+}
+
+.hover__mod:hover {
+    box-shadow: 0 40px 40px rgba(0,0,0,.16);
+    -webkit-transform: translate(0,-20px);
+    transform: translate(0,-20px);
+    transition-delay: 0s !important;
+}
+
+.user-photo {
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+
+.photo-back {
+    width: 100%;
+    background-image: url('https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-1/p160x160/17342777_400396710325485_6251911563858201114_n.jpg?oh=df6c62f636165b0cf7e77e1e5946c9be&oe=5A0B682B');
+    background-repeat: no-repeat;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+    background-size: cover;
+    height: 350px;
+    position: relative;
+}
+
+.user-photo img {
+    border-radius: 100px;
+    position: absolute;
+    top: 20%;
+    left: calc(50% - 80px);
+}
+
+.user > div {
+    display: inline-block;
+    margin-top: 15px;
+    vertical-align: top;
+}
+
+.user .user--info {
+    font-size: 18px;
+    width: 100%;
+}
+
+.user--name {
+    font-size: 26px;
+    font-weight: bold;
+    color: whitesmoke;
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.user-todo {
+    width: 320px;
+    text-align: left;
+    margin: 20px;
+}
+
+#newTasck {
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    width: 80%;
+}
+
+.user-todo button {
+    padding: 5px;
+}
+
+.user--tascks {
+    list-style: none;
+    height: 235px;
+    overflow: overlay;
+}
+
+.tasck {
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    width: 80%;
+    margin: 5px 0px;
+}
+
+.tasck:hover {
+    background-color: azure;
+}
+
+.paypal {
+    width: 50px;
+}
+
+.user--chart {
+    width: calc(100% - 760px);
+}

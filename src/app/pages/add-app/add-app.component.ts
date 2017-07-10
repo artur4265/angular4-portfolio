@@ -10,7 +10,7 @@ export class AddAppComponent implements OnInit {
 
 title = '';
 programsMainData = programsMainData;
-test = '';
+test = [];
   constructor() { }
 
   ngOnInit() {
@@ -18,10 +18,10 @@ test = '';
     this.title = 'Add App';
     console.log(newApp);
     console.log(programsMainData);
-    this.programsMainData.concat(newApp);
-    console.log(this.programsMainData);
-    let test = this.programsMainData.concat(newApp);
-    console.log(test);
+
+    this.test = this.programsMainData.concat(newApp);
+    console.log(this.test);
+
   }
 
 }

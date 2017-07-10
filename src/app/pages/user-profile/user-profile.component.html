@@ -1,1 +1,43 @@
 <div class="breadcrums"><a routerLink="/">Home</a> > {{title}}</div>
+
+<div class="user">
+
+    <div class="user-face hover__mod">
+        <div class="user-photo">
+            <div class="photo-back"></div>
+            <img src="{{avatar}}" alt="">
+            <div class="user--name">Artur Kalbukov</div>
+        </div>
+        <div class="user--info">
+            <div class="user--city">Ukraine - Kiev</div>
+            <div class="user--birthday">Birthday: 12.06.1990</div>
+            <div class="user--email">E-mail: kalbukov.artur@gmail.com</div>
+        </div>
+
+    </div>
+
+    <div class="user-todo hover__mod">
+        <h2>Your Balance</h2>
+        <p>Your balance is <strong>$16.00</strong></p>
+        <p>Your payment method is <img class="paypal" src="http://dollary.net/wp-content/uploads/2016/10/Paypal-icon-256x165.jpg" alt=""></p>
+        <br>
+        <hr>
+        <h2>Your task list</h2>
+        <input id="newTasck" #newTasck (keyup.enter)="addTasck(newTasck.value)" (blur)="addTasck(newTasck.value); newTasck.value='' ">
+
+        <button (click)="addTasck(newTasck.value)">Add</button>
+
+        <ul class="user--tascks">
+            <li class="tasck" *ngFor="let task of tascks">
+                {{task}}
+            </li>
+        </ul>
+    </div>
+
+<div class="user--chart">
+    <chart [type]="type" [data]="data" [options]="options"></chart>
+    <chart [type]="type" [data]="data" [options]="options"></chart>
+</div>
+
+
+</div>
