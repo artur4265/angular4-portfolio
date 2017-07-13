@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProgramListService } from './../program-list.service';
 import { Apps, programsMainData } from './../app-data.model';
+import { FilterPipe } from './../../filter.pipe';
 
 @Component({
   selector: 'app-market-place',

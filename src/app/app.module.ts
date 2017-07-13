@@ -19,6 +19,7 @@ import { DetailAppComponent } from './pages/detail-app/detail-app.component';
 
 // Services
 import { ProgramListService } from './pages/program-list.service';
+import { FilterPipe } from './filter.pipe';
 
 
 
@@ -45,7 +46,8 @@ const appRoutes: Routes = [
     UpgrateToProComponent,
     NotfoundComponent,
     HomeComponent,
-    DetailAppComponent
+    DetailAppComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

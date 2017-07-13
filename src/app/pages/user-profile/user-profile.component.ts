@@ -9,7 +9,12 @@ export class UserProfileComponent implements OnInit {
 
 title = '';
 avatar = '';
-tascks: any[] = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
+tascks: any[] = [
+  '1. add new app',
+  '2. answer to client',
+  '3. update README',
+  '4. Push commit on git'
+  ];
 
 
 type = 'line';

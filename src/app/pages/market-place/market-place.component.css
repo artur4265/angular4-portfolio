@@ -70,3 +70,20 @@
     transform: translate(0,-20px);
     transition-delay: 0s !important;
 }
+
+.search-form {
+    width: auto;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    color: #d74750;
+}
+
+#serach {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
